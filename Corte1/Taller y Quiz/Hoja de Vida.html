@@ -1,0 +1,718 @@
+
+<html>
+<head>
+
+<style type="text/css">	
+	.imagen1{
+		border: 1px solid black; width: 100px; height: 100px;
+	}				
+
+	.primera{
+		border: 1px solid black; width: 1000px; height: 40px; display: inline; position: relative; float: left; margin: 5px; border-radius: 10px 10px 10px 10px;
+	}
+	.ciudad{
+		width: 260px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.ciudad2{
+		width: 250px; height: 10px; display : inline; position: ; float: left; margin: 2px;
+	}
+	.empleo{
+		width: 320px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;
+	}
+	.codigo{
+		width: 120px; height: 10px; display : block; position: ; float: left; margin: 2px; padding-left: 5px;
+	}
+	.personales{
+		border: 1px solid black; width: 1000px; height: 20px; display: block; position: relative; float: left; margin-top: 5px; border-radius: 10px 10px 10px 10px; text-align: center; background-color: grey; 
+	}
+	.segunda{
+		border: 1px solid black; width: 860px; height: 205px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.apellidos{
+		width: 220px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.inputapellido{
+		width: 200px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.nombres{
+		width: 180px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left;
+	}
+	.inputNombre{
+		width: 380px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.profesion{
+		width: 470px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-top-style: solid; border-top-width: 1px;
+	}
+	.inputProfesion{
+		width: 460px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.experiencia{
+		width: 180px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-top-style: solid; border-top-width: 1px;
+	}
+	.inputExperiensia{
+		width: 170px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.salario{
+		width: 192px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-top-style: solid; border-top-width: 1px;  
+	}
+	.inputsalario{
+		width: 190px; height: 10px; display : inline; position: ; float: left; margin: 2px;
+	}	
+	.nacimiento{
+		width: 430px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-top-style: solid; border-top-width: 1px;
+	}
+	.inputNacimiento{
+		width: 420px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.fecha{
+		width: 220px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-top-style: solid; border-top-width: 1px;
+	}
+	.inputFecha{
+		width: 210px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.cedula{
+		width: 424px;  height: 20px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-top-style: solid; border-top-width: 1px;  
+	}
+	.inputCedula{
+		width: 230px; height: 10px; display : inline; position: ; float: right; margin: 2px;	
+	}	
+	.tercera{
+		border: 1px solid black; width: 1000px; height: 81px; display: block; float: left; border-top-right-radius: 10px 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-top: 0px;
+	}
+	.vivienda{
+		width: 180px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.inputVivienda{
+		width: 170px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.arrendador{
+		width: 220px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.inputArrendador{
+		width: 200px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.tel{
+		width: 200px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.inputTel{
+		width: 180px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.trabajando{
+		width: 200px;  height: 40px; padding-left: 5px; display : inline-block; position: relative; border-right-style: solid; border-right-width: 1px; border-top-style: solid; border-top-width: 1px;
+	}
+	.educacion{
+		border: 1px solid black; width: 1000px; height: 20px; display: block; position: relative; float: left; margin-top: 7px; border-radius: 10px 10px 10px 10px; text-align: center; background-color: grey; 
+	}
+	.cuarta{
+		border: 1px solid black; width: 1000px; height: 203px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.primaria{
+		width: 150px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.establecimiento{
+		width: 330px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputEstablecimiento{
+		width: 280px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.ciudad3{
+		width:170px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputCiudad3{
+		width: 130px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.fecha2{
+		width:151px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.superior{
+		width: 150px;  height: 80px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.profesion2{
+		width: 450px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.formacion{
+		width:382px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.realiza{
+		width:800px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.inputRealiza{
+		width: 780px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.laboral{
+		border: 1px solid black; width: 1000px; height: 20px; display: block; position: relative; float: left; margin-top: 7px; border-radius: 10px 10px 10px 10px; text-align: center; background-color: grey; 
+	}
+	.quinta{
+		border: 1px solid black; width: 1000px; height: 268px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.empresa{
+		width: 500px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputEmpresa{
+		width: 490px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.direccion2{
+		width: 330px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputDireccion2{
+		width: 300px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.cargo{
+		width: 489px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputCargo{
+		width: 450px; height: 10px; display : inline;  float: left; margin: 2px;	
+	}
+	.funcion{
+		width: 996px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputFuncion{
+		width: 980px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.inputFuncion2{
+		width: 980px; height: 25px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.ingreso{
+		width: 249px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.ingreso2{
+		width: 230px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputIngreso{
+		width: 240px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.inputIngreso2{
+		width: 217px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.trayectoria{
+		border: 1px solid black; width: 1000px; height: 20px; display: block; position: relative; float: left; margin-top: 47px; border-radius: 10px 10px 10px 10px; text-align: center; background-color: grey; 
+	}
+	.sexta{
+		border: 1px solid black; width: 1000px; height: 268px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}	
+	.septima{
+		border: 1px solid black; width: 1000px; height: 205px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.esposo{
+		width: 333px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.esposo2{
+		width: 317px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputEsposo{
+		width: 320px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.inputEsposo2{
+		width: 305px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.parentesco{
+		width: 434px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  border-bottom-style: solid; border-bottom-width: 1px;  
+	}
+	.edades{
+		width: 300px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputParenteco{
+		width: 400px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.inputEdades{
+		width: 280px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.padres{
+		width: 500px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.inputPadres{
+		width: 480px; height: 32px; display : inline; position: ; float: left; margin: 2px;	
+	}
+		
+	.octava{
+		border: 1px solid black; width: 1000px; height: 80px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.data{
+		width: 238px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.data2{
+		width: 237px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputData{
+		width: 220px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}
+	.inputData2{
+		width: 220px; height: 10px; display : inline; position: ; float: left; margin: 2px;	
+	}	
+	.numeral{
+		width: 20px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.numera2{
+		width: 20px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  
+	}
+	.data3{
+		width: 238px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  
+	}
+	.novena{
+		border: 1px solid black; width: 1000px; height: 120px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.decima{
+		border: 1px solid black; width: 1000px; height: 120px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 8px; margin-bottom: 0px;
+	}
+	.nota{
+		width: 333px;  height: 120px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;  
+	}
+	.once{
+		border: 1px solid black; width: 1000px; height: 410px; display: inline-block; border-radius: 10px 10px 10px 10px; margin-top: 0px; margin-bottom: 0px;
+	}
+	.entre{
+		width: 996px;  height: 30px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputEntre{
+		width: 750px; height: 10px; display : inline; position: ;  margin: 2px;  
+	}	
+	.inputEntre2{
+		width: 900px; height: 10px; display : inline; position: ;  margin: 2px;  
+	}
+	.vacio{
+		width: 550px;  height: 30px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputVacio{
+		width: 540px; height: 10px; display : inline; position: ;  margin: 2px; 	
+	}
+	.candi{
+		width: 210px;  height: 30px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.fecha11{
+		width: 222px;  height: 30px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputFecha11{
+		width: 165px; height: 10px; display : inline; position: ;  margin: 2px; 	
+	}
+	.vacio2{
+		width: 770px;  height: 30px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputVacio2{
+		width: 760px; height: 10px; display : inline; position: ;  margin: 2px; 	
+	}
+	.fecha12{
+		width: 218px;  height: 30px; padding-left: 5px; display : inline; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputFecha12{
+		width: 150px; height: 10px; display : inline; position: ;  margin: 2px; 	
+	}
+	.candidato{
+		width: 520px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-right-style: solid; border-right-width: 1px; 
+	}
+	.candidato2{
+		width: 520px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.contratece{
+		width: 240px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.inputContratece{
+		width: 220px;  height: 10px; padding-left: 5px; display : inline; position: relative; float: left; 
+	}
+	.fecha13{
+		width: 223px;  height: 40px; padding-left: 5px; display : block; position: relative; float: left; border-bottom-style: solid; border-bottom-width: 1px;
+	}
+	.terminar{
+		width: 249px;  height: 40px; padding-left: 5px; display : inline; position: relative; float: left; border-right-style: solid; border-right-width: 1px;
+	}
+	.img1{
+
+	}
+
+
+</style>
+</head>
+<body>
+
+<div>
+	<img src="Imagenes html/img1.jpg" border="0" width="80" height="80">
+</div>
+
+<div class="primera">
+	<div class="ciudad">Ciudad
+		<input class="ciudad2" type="text">	
+	</div>
+	<div class="ciudad">fecha
+		<input class="ciudad2" type="text">	
+	</div>
+	<div class="empleo">Empleo o cargo solicitado
+		<input class="ciudad2" type="text">	
+	</div>
+	<div>Codigo cargo
+		<input class="codigo" type="text">
+	</div>
+</div>
+
+<div class="personales"><b><font color="white">I. DATOS PERSONALES</font></b></div>
+
+<div class="segunda">
+	<div class="apellidos">Primer apellido
+		<input class="inputapellido" type="text">	
+	</div>
+	<div class="apellidos">Segundo apellido
+		<input class="inputapellido" type="text">	
+	</div>
+	<div class="nombres">Nombres
+		<input class="inputNombre" type="text">	
+	</div>
+	<div class="profesion">Profesion, ocupacion, oficio
+		<input class="inputProfesion" type="text">	
+	</div>
+	<div class="experiencia">Anos de experiencia laboral
+		<input class="inputExperiensia" type="text">	
+	</div>
+	<div class="salario">Aspiracion salarial
+		<textarea class="inputExperiensia">$</textarea>
+	</div>
+	<div class="nacimiento">Lugar de nacimiento
+		<input class="inputNacimiento" type="text">
+	</div>
+	<div class="fecha">(*) Fecah de nacimiento
+		<input class="inputFecha" type="text">
+	</div>
+	<div class="salario">(*)Estado civil
+		<input class="inputExperiensia"type="text">
+	</div>
+	<div class="profesion">Direccion domicilio
+		<input class="inputProfesion" type="text">	
+	</div>
+	<div class="experiencia">Barrio
+		<input class="inputExperiensia" type="text">	
+	</div>
+	<div class="salario">Telefono
+		<input class="inputExperiensia"type="text">
+	</div>
+	<div class="cedula">Cedula de ciudadania: N°
+		<input class="inputCedula"type="text">
+	</div>
+	<div class="cedula">(**)Libreta militar N°
+		<input class="inputCedula"type="text">
+	</div>	
+	<div class="cedula">Expedida en
+		<input class="inputCedula"type="text">
+	</div>	
+</div>
+
+<div class="tercera">
+	<div class="apellidos">Licencia de conduccion
+		<input class="inputapellido" type="text">	
+	</div>
+	<div class="vivienda">¿Vivienda propia?
+		<input class="inputVivienda" type="text">	
+	</div>
+		<div class="arrendador">Nombre del arredandor
+		<input class="inputArrendador" type="text">
+	</div>	
+		<div class="tel">Telefono
+		<input class="inputTel"type="text">
+	</div>
+	<div>Valor arriendo
+		<input class="codigo"type="text">
+	</div>
+	<div class="trabajando">¿Esta trbajando actualmente?
+		
+	</div>
+</div>
+
+<div class="educacion"><b><font color="white">II. EDUCACION Y APTITUDES</font></b></div>
+
+<div class="cuarta">
+	<div class="primaria"><b>Primaria</b></div>
+	<div class="establecimiento">Establecimiento
+		<input class="inputEstablecimiento"type="text">
+	</div>
+	<div class="ciudad3">Ciudad
+		<input class="inputCiudad3"type="text">
+	</div>
+	<div class="ciudad3">Ultimo grado
+		<input class="inputCiudad3"type="text">
+	</div>	
+	<div class="fecha2" type="text">Fecha
+		<input class="inputCiudad3"type="text">
+	</div>
+	<div class="primaria"><b>Bachillerato</b></div>
+	<div class="establecimiento">Establecimiento
+		<input class="inputEstablecimiento"type="text">
+	</div>
+	<div class="ciudad3">Ciudad
+		<input class="inputCiudad3"type="text">
+	</div>
+	<div class="ciudad3">Ultimo grado
+		<input class="inputCiudad3"type="text">
+	</div>	
+	<div class="fecha2" type="text">Fecha
+		<input class="inputCiudad3"type="text">
+	</div>
+		<div class="superior"><b>Educacion superior</b></div>
+	<div class="establecimiento">Establecimiento
+		<input class="inputEstablecimiento"type="text">
+	</div>
+	<div class="ciudad3">Ciudad
+		<input class="inputCiudad3"type="text">
+	</div>
+	<div class="ciudad3">Ultimo grado
+		<input class="inputCiudad3"type="text">
+	</div>	
+	<div class="fecha2" type="text">Fecha
+		<input class="inputCiudad3"type="text">
+	</div>
+	<div class="profesion2" type="text">Titulo obtenido o especialidad
+		<input class="inputNombre"type="text">
+	</div>
+	<div class="formacion">Tipo de formacion
+		<input class="inputArrendador"type="text">
+	</div>
+	<div class="realiza">¿?Que estudios realiza actualmente
+	<input class="inputRealiza"type="text">
+	</div>
+	<div>Horario:
+		<input class="inputTel"type="text">
+	</div>
+	
+	<div class="laboral"><b><font color="white">III. EXPERIENCIA LABORAL</font></b></div>
+	<div class="quinta">
+		<div class="empresa">Nombre de la ultima o actual empresa
+				<input class="inputEmpresa"type="text">
+		</div>
+		<div class="direccion2">Direccion
+			<input class="inputDireccion2"type="text">
+		</div>
+		<div class="fecha2" type="text">Telefono(s)
+			<input class="inputCiudad3"type="text">
+		</div>
+		<div class="empresa">Nombre de su jefe inmediato
+			<input class="inputEmpresa"type="text">
+		</div>
+		<div class="cargo">Cargo(s) desempenado(s) por usted
+			<input class="inputCargo"type="text">
+		</div>
+		<div class="funcion">Funciones realizadas
+			<input class="inputFuncion"type="text">
+		</div>
+		<div class="funcion">
+			<input class="inputFuncion2"type="text">
+		</div>
+		<div class="ingreso">Fecha de ingreso
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso">Fecha de retiro
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso">Sueldo inicial
+			<textarea class="inputIngreso"type="text">$</textarea>
+		</div>
+		<div class="ingreso2">Sueldo final o actual
+			<textarea class="inputIngreso2"type="text">$</textarea>
+		</div>
+		<div class="funcion">Motuvo del retiro
+			<input class="inputFuncion"type="text">
+		</div>
+		<div><small><b><i>Verificacion</i></b> <i> (Espacio exclusivo para el entrevistador)</i></small></div>
+	</div>
+	<div class="quinta">
+		<div class="empresa">Nombre de la ultima o actual empresa
+				<input class="inputEmpresa"type="text">
+		</div>
+		<div class="direccion2">Direccion
+			<input class="inputDireccion2"type="text">
+		</div>
+		<div class="fecha2" type="text">Telefono(s)
+			<input class="inputCiudad3"type="text">
+		</div>
+		<div class="empresa">Nombre de su jefe inmediato
+			<input class="inputEmpresa"type="text">
+		</div>
+		<div class="cargo">Cargo(s) desempenado(s) por usted
+			<input class="inputCargo"type="text">
+		</div>
+		<div class="funcion">Funciones realizadas
+			<input class="inputFuncion"type="text">
+		</div>
+		<div class="funcion">
+			<input class="inputFuncion2"type="text">
+		</div>
+		<div class="ingreso">Fecha de ingreso
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso">Fecha de retiro
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso">Sueldo inicial
+			<textarea class="inputIngreso"type="text">$</textarea>
+		</div>
+		<div class="ingreso2">Sueldo final o actual
+			<textarea class="inputIngreso2"type="text">$</textarea>
+		</div>
+		<div class="funcion">Motuvo del retiro
+			<input class="inputFuncion"type="text">
+		</div>
+		<div><small><b><i>Verificacion</i></b> <i> (Espacio exclusivo para el entrevistador)</i></small></div>
+	</div>
+
+	<div class="laboral"><b><font color="white">IV. TRAYECTORIA POR EMPRESAS (Marque con una (X) en que clase de empresas a trabajado o tiene experiencia)</font></b></div>
+	<div class="sexta">
+
+		
+	</div>
+
+	<div class="educacion"><b><font color="white">VI. INFORMACION FAMILIAR</font></b></div>
+	<div class="septima">
+		<div class="esposo">Nombre esposa(o) o comopanera(o)
+			<input class="inputEsposo"type="text">
+		</div>
+		<div class="esposo">Profesion, ocupacion u oficio
+			<input class="inputEsposo"type="text">
+		</div>
+		<div class="esposo2">Empresa donde trabaja
+			<input class="inputEsposo2"type="text">
+		</div>
+		<div class="ingreso">Cargo actual
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso">Direccion
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso">Telefono
+			<input class="inputIngreso"type="text">
+		</div>
+		<div class="ingreso2">Ciudad
+			<input class="inputIngreso2"type="text">
+		</div>
+		<div class="ingreso">N° de pesonas que dependen economicamente del solicitante
+			
+		</div>
+		<div class="parentesco">Parentesco
+			<input class="inputParenteco"type="text">
+		</div>	
+		<div class="edades">Edades
+			<input class="inputEdades"type="text">
+		</div>
+		<div class="empresa">Nombre(s) padres(s)
+			<input class="inputEmpresa"type="text">
+		</div>
+		<div class="cargo">Profesion, ocupacion u oficio
+			<input class="inputCargo"type="text">
+		</div>
+		<div class="padres">
+			<input class="inputPadres"type="text">
+		</div>
+		<div>
+			<input class="inputPadres"type="text">
+		</div>
+	</div>
+
+	<div class="educacion"><b><font color="white">VI. REFERENCIAS PERSONALES ()Indique dos nombres de personas distintas a familiares o empleadores)</font></b></div>
+	<div class="octava">
+		<div class="numeral"><b>1.-</b></div>
+		<div class="data">Nombre
+			<input class="inputData"type="text">
+		</div>
+		<div class="data">Ocupacion
+			<input class="inputData"type="text">
+		</div>
+		<div class="data">Direccion
+			<input class="inputData"type="text">
+		</div>
+		<div class="data2">Telefono
+			<input class="inputData2"type="text">
+		</div>
+		<div class="numera2"><b>2.-</b></div>
+		<div class="data3">Nombre
+			<input class="inputData"type="text">
+		</div>
+		<div class="data3">Ocupacion
+			<input class="inputData"type="text">
+		</div>
+		<div class="data3">Direccion
+			<input class="inputData"type="text">
+		</div>
+		<div>Telefono
+			<input class="inputData2"type="text">
+		</div>
+	</div>
+
+	<div class="educacion"><b><font color="white">VII. INFORMACION ADICIONAL</font></b></div>
+		<div class="novena">
+			<div class="empresa">¿Quien le sugirio solicitar empleo en esta empresa?
+				<input class="inputEmpresa"type="text">
+			</div>
+			<div class="cargo">¿Lo recomienda alguien que trabaja en esta empresa?
+				<input class="inputCargo"type="text">
+			</div>
+			<div class="empresa">Nombre de la persona que lo recomienda
+				<input class="inputEmpresa"type="text">
+			</div>
+			<div class="cargo">Division o departamento
+				<input class="inputCargo"type="text">
+			</div>
+			<div>Si tiene parientes en esta empresa mensionelos
+			<input class="inputFuncion"type="text">
+			</div>
+		</div>
+
+	<div class="decima">
+		<div class="nota"><center><b>Nota importante</b><p>Favor no llamar por telefono, no concurrir por preguntar por el resultado de esta solicitud nosotros le avisaremos, gracias.</p></center>
+		</div>
+		<div class="nota"><center><b>Certificacion</b><p><small>Para todos los efectos legales, certifico que todas las respuestas e informaciones anotadas para mi, en la presente hoja de vida son veraces (C.S.T., Art. 62 Num. 1°) Regimen Laboral Colombiano 1057 (Legis).</p></small></center>
+		</div>
+	</div>
+
+	<div class="educacion"><b><font color="white">VIII. ADMINISTRACION PROCESO DE SELECCION (Espacio exclusivo para el empleador)</font></b></div>
+	<div class="once">
+		<div class="entre">Concepto primer entrevistador:
+			<input class="inputEntre"type="text">
+		</div>
+		<div class="entre">
+			<input class="inputEntre2"type="text">
+		</div>
+		<div class="vacio">
+			<input class="inputVacio"type="text">
+		</div>
+		<div class="candi">Vo. Bo. candidato. Firma</div>
+		<div class="fecha11">Fecha
+		<input class="inputFecha11"type="text">
+		</div>
+		<div class="entre">Concepto segundo entrevistador:
+			<input class="inputEntre"type="text">
+		</div>
+		<div class="entre">
+			<input class="inputEntre2"type="text">
+		</div>
+		<div class="vacio">
+			<input class="inputVacio"type="text">
+		</div>
+		<div class="candi">Vo. Bo. candidato. Firma</div>
+		<div class="fecha11">Fecha
+		<input class="inputFecha11"type="text">
+		</div>
+		<div class="entre"><b>Concluiones</b>
+			<input class="inputEntre"type="text">
+		</div>
+		<div class="vacio2">
+			<input class="inputVacio2"type="text">
+		</div>
+		<div class="fecha12">Fecha
+			<input class="inputFecha12"type="text">
+		</div>
+		<diiv class="candidato">Candidato seleccionado definitivamente
+		
+		</diiv>
+		<div class="contratece">Contratece a partir del
+			<input class="inputContratece"type="text">
+		</div>
+		<div class="fecha13">Sueldo
+			<textarea  class="inputFecha"type="text">$</textarea>
+		</div>
+		<diiv class="candidato2">Candidato elegible proximamente
+		
+		</diiv>
+		<div class="contratece">Cargo
+			<input class="inputContratece"type="text">
+		</div>
+		<div class="fecha13">tipo de contrato
+			<input class="inputFecha"type="text">
+		</div>
+	
+
+	</div>
+</body>
+</html>
